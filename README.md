@@ -25,20 +25,23 @@ Follow these instructions to set up and run the project on your local machine.
    ```bash
    git clone https://github.com/ArfanAbid/Django-Authentication.git
 
-2. Create and activate Virtual Environment:
+2. Navigate to project directory:
+    `cd core`
+   
+3. Create and activate Virtual Environment:
    `python -m venv venv` then
    `.\venv\Scripts\activate`
 
-3. Run Data base migrations:
+4. Run Data base migrations:
    `python manage.py migrate`
 
-4. Create a superuser (admin account) to access the Django admin panel:
+5. Create a superuser (admin account) to access the Django admin panel:
    `python manage.py createsuperuser`
 
-5. Run the development server:
+6. Run the development server:
    `python manage.py runserver`
 
- 6. Access the development server at  `http://127.0.0.1:8000/`
+ 7. Access the development server at  `http://127.0.0.1:8000/`
 
 
 
