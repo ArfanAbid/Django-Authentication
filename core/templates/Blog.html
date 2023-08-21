@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog Post</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- <header class="bg-gray-500 py-4">
+        <div class="container mx-auto text-white text-center">
+            <h1 class="text-3xl font-semibold">DJANGO Authentication</h1>
+        </div>
+    </header> -->
+
+
+    <nav class="bg-gray-600 p-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="text-white font-semibold text-xl">Django Authentication </div>
+            <div class="space-x-4">
+                <a href="/"
+                    class="bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 transition duration-300">Home</a>
+                <a href="/Logout"
+                    class="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 transition duration-300">Logout</a>
+            </div>
+        </div>
+    </nav><br>
+    <h1 class="text-4xl font-semibold text-gray-800 mb-6  text-center">Welcome {{request.user}} !</h1>
+    <main class="container mx-auto mt-8">
+        <div class="bg-white p-8 shadow-md">
+            <h2 class="text-2xl font-semibold mb-4">Django Blog</h2>
+            <p class="text-gray-700">
+                Developers can easily integrate the authentication system into their projects by adding the necessary
+                URLs, views, and templates provided by Django. This allows users to register for accounts, log in
+                securely, and manage their account settings. Django also offers decorators and mixins that allow
+                developers to restrict access to certain views based on user authentication and permissions.
+
+                Furthermore, Django's authentication system is highly customizable and extensible. It supports the use
+                of third-party authentication providers such as OAuth and social authentication services. Developers can
+                also create custom user models to accommodate specific requirements of their applications.
+
+
+                <br>
+
+                <b> User Models and Authentication Backends:</b><br>
+                Django's authentication system revolves around the concept of user models. By default, Django provides a
+                built-in user model called User, which includes fields like username, password, email, and more. This
+                model is associated with authentication and user management. However, you can also create a custom user
+                model by extending AbstractBaseUser and PermissionsMixin classes, allowing you to define your own fields
+                and methods..
+                Authentication backends in Django handle the actual authentication process. By default, Django uses the
+                ModelBackend, which authenticates users based on the user model specified in your settings. However, you
+                can also implement custom authentication backends to support different authentication mechanisms, like
+                LDAP or OAuth....
+            </p>
+            <br>
+            <p class="text-gray-700 mt-2">Published on: August 19, 2023</p>
+            <!-- <a href="#" class="text-blue-500 mt-4 inline-block">Read more</a> -->
+        </div>
+    </main>
+    <br><br><br><br><br>
+    <footer class="bg-gray-400 py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Arfan's Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
