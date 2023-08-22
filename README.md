@@ -1,6 +1,6 @@
 # Django-Default_Authentication
 
-This project demonstrates a basic implementation of user Default authentication using Django. It covers user registration, login, and logout functionality with proper security measures.
+This project demonstrates a basic implementation of Default user authentication using Django. It covers user registration, login, and logout functionality with proper security measures.
 
 ## Features
 
@@ -8,6 +8,13 @@ This project demonstrates a basic implementation of user Default authentication 
 - User login: Existing users can log in using their credentials.
 - User logout: Logged-in users can log out to end their session.
 - Password security: User passwords are securely hashed using Django's built-in hashing mechanisms.
+
+## Mechanism Used
+
+- User Model:   Django provides a User model that includes fields like username, email, and password. You can use this model to store user information. The User model supports features like password hashing and salting, making it secure against common security vulnerabilities.
+
+- Authentication Views:   Django includes built-in views for authentication-related tasks such as login, logout, password reset, and account activation. These views are part of the `django.contrib.auth.views` module and can be easily integrated into your application's URL routing.
+
 
 ## Getting Started
 
