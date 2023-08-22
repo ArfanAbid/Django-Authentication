@@ -1,6 +1,6 @@
 # Django-Authentication
 
-This project demonstrates a basic implementation of user authentication using Django. It covers user registration, login, and logout functionality with proper security measures.
+This project demonstrates a basic implementation of user Default authentication using Django. It covers user registration, login, and logout functionality with proper security measures.
 
 ## Features
 
